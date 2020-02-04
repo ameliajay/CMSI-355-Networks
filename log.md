@@ -18,11 +18,11 @@ Full Routing Table: `netstat -r`
 
 ![Home 1 table](https://user-images.githubusercontent.com/31746937/73716756-c9bb7600-46cc-11ea-9537-14130e026211.png)
 
-
 _____________________________________
 
 Other hosts on the same network: `arp -a`
 
+![Home 1 arp](https://user-images.githubusercontent.com/31746937/73717100-af35cc80-46cd-11ea-8438-139f603d2abc.png)
 
 ______________________________________
 
