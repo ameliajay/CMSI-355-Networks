@@ -30,6 +30,9 @@ ping:
 
 1. Host discovered by *arp*: `192.168.0.29`
 
+![Home 1 ping host](https://user-images.githubusercontent.com/31746937/73717341-62062a80-46ce-11ea-8a39-6b9c117457fb.png)
+
+
 2. Default router: `192.168.0.1`
 
 3. One of the DNS: `209.18.47.63`
