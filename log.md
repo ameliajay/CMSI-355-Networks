@@ -294,6 +294,8 @@ nmap:
 
 *Unfortuately the first time I went to this cafe I didn't have `nmap` installed so I didn't get to run this command!*
 
+___________________________
+
 ### LMU
 #### Exploration 1
 _______________________________________
