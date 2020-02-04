@@ -310,13 +310,13 @@ ______________________________________
 
 Full Routing Table: `netstat -r`
 
-![Home 1 table](https://user-images.githubusercontent.com/31746937/73716756-c9bb7600-46cc-11ea-9537-14130e026211.png)
+![LMU 1 table](https://user-images.githubusercontent.com/31746937/73721767-ca0e3e00-46d9-11ea-9fc9-5272c8e79aa2.png)
 
 _____________________________________
 
 Other hosts on the same network: `arp -a`
 
-![Home 1 arp](https://user-images.githubusercontent.com/31746937/73717100-af35cc80-46cd-11ea-8438-139f603d2abc.png)
+![LMU 1 arp](https://user-images.githubusercontent.com/31746937/73721906-2e310200-46da-11ea-9fca-b609508af33b.png)
 
 ______________________________________
 
@@ -324,23 +324,23 @@ ping:
 
 1. Host discovered by *arp*: `10.27.200.253`
 
-![Home 1 ping host](https://user-images.githubusercontent.com/31746937/73717341-62062a80-46ce-11ea-8a39-6b9c117457fb.png)
+![LMU 1 ping host](https://user-images.githubusercontent.com/31746937/73721926-38530080-46da-11ea-94c5-088bac55ba76.png)
 
 2. Default router: `192.168.0.1`
 
-![Home 1 ping router](https://user-images.githubusercontent.com/31746937/73717522-e9ec3480-46ce-11ea-98bf-331e709cad9d.png)
+![LMU 1 ping router](https://user-images.githubusercontent.com/31746937/73721947-430d9580-46da-11ea-8bd3-d402d59e840c.png)
 
 3. One of the DNS: `209.18.47.63`
 
-![Home 1 ping DNS](https://user-images.githubusercontent.com/31746937/73717538-f96b7d80-46ce-11ea-8518-aea938085748.png)
+![LMU 1 ping DNS](https://user-images.githubusercontent.com/31746937/73721973-4d2f9400-46da-11ea-8162-c9ef05c47031.png)
 
 4. `www.lmu.edu`
 
-![Home 1 ping lmu](https://user-images.githubusercontent.com/31746937/73717557-07210300-46cf-11ea-8758-b7ddd3f82464.png)
+![LMU 1 ping lmu](https://user-images.githubusercontent.com/31746937/73721992-5882bf80-46da-11ea-8ee8-5df2f7698732.png)
 
 5. `dondi.lmu.build`
 
-![Home 1 ping dondi](https://user-images.githubusercontent.com/31746937/73717572-12742e80-46cf-11ea-8dcb-401d06746453.png)
+![LMU 1 ping dondi](https://user-images.githubusercontent.com/31746937/73722010-620c2780-46da-11ea-9739-a0763b440f42.png)
 
 ___________________________________
 
