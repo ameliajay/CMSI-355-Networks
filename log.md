@@ -117,11 +117,13 @@ ______________________________________
 
 Full Routing Table: `netstat -r`
 
+![Home 2 table](https://user-images.githubusercontent.com/31746937/73718547-afd06200-46d1-11ea-82f6-4855f2340bbd.png)
 
 _____________________________________
 
 Other hosts on the same network: `arp -a`
 
+![Home 2 arp](https://user-images.githubusercontent.com/31746937/73718566-b9f26080-46d1-11ea-8468-61060959e504.png)
 
 ______________________________________
 
@@ -129,13 +131,23 @@ ping:
 
 1. Host discovered by *arp*: `192.168.0.9`
 
+![Home 2 ping host](https://user-images.githubusercontent.com/31746937/73718583-c7a7e600-46d1-11ea-88c4-ec3e70885a07.png)
+
 2. Default router: `192.168.0.1`
+
+![Home 2 ping router](https://user-images.githubusercontent.com/31746937/73718598-d393a800-46d1-11ea-9373-a477bb7e9787.png)
 
 3. One of the DNS: `209.18.47.63`
 
+![Home 2 ping DNS](https://user-images.githubusercontent.com/31746937/73718606-dee6d380-46d1-11ea-8b63-0485f48b83aa.png)
+
 4. `www.lmu.edu`
 
+![Home 2 ping lmu](https://user-images.githubusercontent.com/31746937/73718615-e6a67800-46d1-11ea-9acf-82e090d70b12.png)
+
 5. `dondi.lmu.build`
+
+![Home 2 ping dondi](https://user-images.githubusercontent.com/31746937/73718651-00e05600-46d2-11ea-8c7c-60e2a7e8d82d.png)
 
 ___________________________________
 
