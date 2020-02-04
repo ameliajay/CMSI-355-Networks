@@ -202,3 +202,103 @@ nmap:
 ![Home 2 nmap stop](https://user-images.githubusercontent.com/31746937/73718852-8237e880-46d2-11ea-9b4f-f3be7cbdcecf.png)
 ![Home 2 nmap stop pt2](https://user-images.githubusercontent.com/31746937/73718861-89f78d00-46d2-11ea-85fc-5b74b5115b5c.png)
 
+### Public Network: Playa Provisions (Cafe in Playa del Rey)
+#### Exploration 1
+_______________________________________
+
+IP Address: `192.168.0.34`
+
+Subnet Mask: `255.255.255.0`
+
+Router: `192.168.0.1`
+
+DNS: `209.18.47.63` & `209.18.47.62`
+
+______________________________________
+
+Full Routing Table: `netstat -r`
+
+![Playa Guest 1 table](https://user-images.githubusercontent.com/31746937/73720663-566b3180-46d7-11ea-8e13-6149e30f4f0f.png)
+
+_____________________________________
+
+Other hosts on the same network: `arp -a`
+
+![Playa Guest 1 arp](https://user-images.githubusercontent.com/31746937/73720702-6551e400-46d7-11ea-86d6-56a49931663e.png)
+
+______________________________________
+
+ping:
+
+1. Host discovered by *arp*: `192.168.0.29`
+
+![Playa Guest 1 ping host](https://user-images.githubusercontent.com/31746937/73720731-7864b400-46d7-11ea-8245-4c3bba7b560d.png)
+
+2. Default router: `192.168.0.1`
+
+![Playa Guest 1 ping router](https://user-images.githubusercontent.com/31746937/73720743-84507600-46d7-11ea-9bc8-52cafa3f0d78.png)
+
+3. One of the DNS: `209.18.47.63`
+
+![Playa Guest 1 ping DNS](https://user-images.githubusercontent.com/31746937/73720761-8dd9de00-46d7-11ea-8a81-11a8796112ef.png)
+
+4. `www.lmu.edu`
+
+![Playa Guest 1 ping lmu](https://user-images.githubusercontent.com/31746937/73720773-9a5e3680-46d7-11ea-8250-83c22c189e25.png)
+
+5. `dondi.lmu.build`
+
+![Playa Guest 1 ping dondi](https://user-images.githubusercontent.com/31746937/73720782-a3e79e80-46d7-11ea-822d-88c98ba77f82.png)
+
+___________________________________
+
+traceroute:
+
+1. Host discovered by *arp*: `192.168.0.29`
+
+![Home 1 traceroute host](https://user-images.githubusercontent.com/31746937/73717657-48b1ae00-46cf-11ea-88ae-cc08a45109f7.png)
+
+2. Default router: `192.168.0.1`
+
+![Home 1 traceroute router](https://user-images.githubusercontent.com/31746937/73717684-5a935100-46cf-11ea-8201-4131f5b8bf69.png)
+
+3. One of the DNS: `209.18.47.63`
+
+![Home 1 traceroute DNS](https://user-images.githubusercontent.com/31746937/73717706-6848d680-46cf-11ea-874e-c1c69266ef87.png)
+
+4. `www.lmu.edu`
+
+![Home 1 traceroute lmu](https://user-images.githubusercontent.com/31746937/73717731-7860b600-46cf-11ea-94ca-2cb07d877ff6.png)
+
+5. `dondi.lmu.build`
+
+![Home 1 traceroute dondi](https://user-images.githubusercontent.com/31746937/73717745-831b4b00-46cf-11ea-8a95-403ea1487477.png)
+
+_____________________________
+
+dig:
+
+1. `www.lmu.edu`
+
+![Home 1 dig lmu](https://user-images.githubusercontent.com/31746937/73717827-b5c54380-46cf-11ea-97cf-29f73b66824a.png)
+
+2. `dondi.lmu.build`
+
+![Home 1 dig dondi](https://user-images.githubusercontent.com/31746937/73717837-beb61500-46cf-11ea-81a0-854aa2f4b12b.png)
+
+______________________________
+
+nmap:
+
+1. `www.lmu.edu`
+
+![Home 1 nmap lmu ](https://user-images.githubusercontent.com/31746937/73717885-db524d00-46cf-11ea-9139-aba32d452ed1.png)
+
+2. `dondi.lmu.build`
+
+![Home 1 nmap dondi](https://user-images.githubusercontent.com/31746937/73717902-e7d6a580-46cf-11ea-8b6f-e64505883c10.png)
+
+3. A stop discovered by traceroute: `72.129.17.152`
+
+![Home 1 nmap stop](https://user-images.githubusercontent.com/31746937/73717922-f45afe00-46cf-11ea-856f-a4da5efc46a6.png)
+
