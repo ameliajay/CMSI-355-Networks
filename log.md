@@ -105,7 +105,7 @@ ____________________________________
 #### Exploration 2
 _______________________________________
 
-IP Address: `192.168.0.26`
+IP Address: `192.168.0.6`
 
 Subnet Mask: `255.255.255.0`
 
@@ -127,7 +127,7 @@ ______________________________________
 
 ping:
 
-1. Host discovered by *arp*: `192.168.0.29`
+1. Host discovered by *arp*: `192.168.0.9`
 
 2. Default router: `192.168.0.1`
 
@@ -141,7 +141,7 @@ ___________________________________
 
 traceroute:
 
-1. Host discovered by *arp*: `192.168.0.29`
+1. Host discovered by *arp*: `192.168.0.9`
 
 2. Default router: `192.168.0.1`
 
@@ -167,4 +167,4 @@ nmap:
 
 2. `dondi.lmu.build`
 
-3. A stop discovered by traceroute: `72.129.17.152`
+3. A stop discovered by traceroute: `99.82.176.54`
