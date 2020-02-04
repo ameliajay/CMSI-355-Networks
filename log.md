@@ -202,6 +202,8 @@ nmap:
 ![Home 2 nmap stop](https://user-images.githubusercontent.com/31746937/73718852-8237e880-46d2-11ea-9b4f-f3be7cbdcecf.png)
 ![Home 2 nmap stop pt2](https://user-images.githubusercontent.com/31746937/73718861-89f78d00-46d2-11ea-85fc-5b74b5115b5c.png)
 
+_____________________________
+
 ### Public Network: Playa Provisions (Cafe in Playa del Rey)
 #### Exploration 1
 _______________________________________
