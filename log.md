@@ -78,7 +78,11 @@ dig:
 
 1. `www.lmu.edu`
 
+![Home 1 dig lmu](https://user-images.githubusercontent.com/31746937/73717827-b5c54380-46cf-11ea-97cf-29f73b66824a.png)
+
 2. `dondi.lmu.build`
+
+![Home 1 dig dondi](https://user-images.githubusercontent.com/31746937/73717837-beb61500-46cf-11ea-81a0-854aa2f4b12b.png)
 
 ______________________________
 
@@ -86,9 +90,15 @@ nmap:
 
 1. `www.lmu.edu`
 
+![Home 1 nmap lmu ](https://user-images.githubusercontent.com/31746937/73717885-db524d00-46cf-11ea-9139-aba32d452ed1.png)
+
 2. `dondi.lmu.build`
 
+![Home 1 nmap dondi](https://user-images.githubusercontent.com/31746937/73717902-e7d6a580-46cf-11ea-8b6f-e64505883c10.png)
+
 3. A stop discovered by traceroute: `72.129.17.152`
+
+![Home 1 nmap stop](https://user-images.githubusercontent.com/31746937/73717922-f45afe00-46cf-11ea-856f-a4da5efc46a6.png)
 
 ____________________________________
 
