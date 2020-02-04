@@ -1,1 +1,1 @@
-# CMSI-355-Networks
+# CMSI 355: Networks
