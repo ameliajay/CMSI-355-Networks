@@ -348,23 +348,23 @@ traceroute:
 
 1. Host discovered by *arp*: `10.27.200.253`
 
-![Home 1 traceroute host](https://user-images.githubusercontent.com/31746937/73717657-48b1ae00-46cf-11ea-88ae-cc08a45109f7.png)
+![LMU 1 traceroute host](https://user-images.githubusercontent.com/31746937/73722137-ad263a80-46da-11ea-927c-82993c652415.png)
 
 2. Default router: `192.168.0.1`
 
-![Home 1 traceroute router](https://user-images.githubusercontent.com/31746937/73717684-5a935100-46cf-11ea-8201-4131f5b8bf69.png)
+![LMU 1 traceroute router](https://user-images.githubusercontent.com/31746937/73722145-b57e7580-46da-11ea-8ac3-d18e45dcd45b.png)
 
 3. One of the DNS: `209.18.47.63`
 
-![Home 1 traceroute DNS](https://user-images.githubusercontent.com/31746937/73717706-6848d680-46cf-11ea-874e-c1c69266ef87.png)
+![LMU 1 traceroute DNS](https://user-images.githubusercontent.com/31746937/73722163-bfa07400-46da-11ea-8689-983fb559fdd8.png)
 
 4. `www.lmu.edu`
 
-![Home 1 traceroute lmu](https://user-images.githubusercontent.com/31746937/73717731-7860b600-46cf-11ea-94ca-2cb07d877ff6.png)
+![LMU 1 traceroute lmu](https://user-images.githubusercontent.com/31746937/73722181-c8914580-46da-11ea-9049-bae1f88782da.png)
 
 5. `dondi.lmu.build`
 
-![Home 1 traceroute dondi](https://user-images.githubusercontent.com/31746937/73717745-831b4b00-46cf-11ea-8a95-403ea1487477.png)
+![LMU 1 traceroute dondi](https://user-images.githubusercontent.com/31746937/73722209-d34bda80-46da-11ea-8a5d-f0d14821e077.png)
 
 _____________________________
 
@@ -372,11 +372,12 @@ dig:
 
 1. `www.lmu.edu`
 
-![Home 1 dig lmu](https://user-images.githubusercontent.com/31746937/73717827-b5c54380-46cf-11ea-97cf-29f73b66824a.png)
+![LMU 1 dig lmu](https://user-images.githubusercontent.com/31746937/73722226-de066f80-46da-11ea-9a71-4cebe69bd530.png)
 
 2. `dondi.lmu.build`
 
-![Home 1 dig dondi](https://user-images.githubusercontent.com/31746937/73717837-beb61500-46cf-11ea-81a0-854aa2f4b12b.png)
+![LMU 1 dig dondi](https://user-images.githubusercontent.com/31746937/73722248-e8c10480-46da-11ea-8e6f-63f521ab2bc4.png)
+![LMU 1 dig dondi pt2](https://user-images.githubusercontent.com/31746937/73722260-efe81280-46da-11ea-86ff-a1a1deb260d9.png)
 
 ______________________________
 
@@ -384,15 +385,16 @@ nmap:
 
 1. `www.lmu.edu`
 
-![Home 1 nmap lmu ](https://user-images.githubusercontent.com/31746937/73717885-db524d00-46cf-11ea-9139-aba32d452ed1.png)
+![LMU 1 nmap lmu](https://user-images.githubusercontent.com/31746937/73722276-ff675b80-46da-11ea-91f9-6af51c74b236.png)
 
 2. `dondi.lmu.build`
 
-![Home 1 nmap dondi](https://user-images.githubusercontent.com/31746937/73717902-e7d6a580-46cf-11ea-8b6f-e64505883c10.png)
+![LMU 1 nmap dondi](https://user-images.githubusercontent.com/31746937/73722314-0db57780-46db-11ea-85bc-c91451760c9d.png)
+![LMU 1 nmap dondi pt2](https://user-images.githubusercontent.com/31746937/73722327-15751c00-46db-11ea-9e14-cd2b4a715cdb.png)
 
 3. A stop discovered by traceroute: `10.8.255.1`
 
-![Home 1 nmap stop](https://user-images.githubusercontent.com/31746937/73717922-f45afe00-46cf-11ea-856f-a4da5efc46a6.png)
+![LMU 1 nmap stop](https://user-images.githubusercontent.com/31746937/73722336-1d34c080-46db-11ea-9085-c7df2d73cf8a.png)
 
 ____________________________________
 
