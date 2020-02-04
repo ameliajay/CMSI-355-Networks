@@ -54,13 +54,23 @@ traceroute:
 
 1. Host discovered by *arp*: `192.168.0.29`
 
+![Home 1 traceroute host](https://user-images.githubusercontent.com/31746937/73717657-48b1ae00-46cf-11ea-88ae-cc08a45109f7.png)
+
 2. Default router: `192.168.0.1`
+
+![Home 1 traceroute router](https://user-images.githubusercontent.com/31746937/73717684-5a935100-46cf-11ea-8201-4131f5b8bf69.png)
 
 3. One of the DNS: `209.18.47.63`
 
+![Home 1 traceroute DNS](https://user-images.githubusercontent.com/31746937/73717706-6848d680-46cf-11ea-874e-c1c69266ef87.png)
+
 4. `www.lmu.edu`
 
+![Home 1 traceroute lmu](https://user-images.githubusercontent.com/31746937/73717731-7860b600-46cf-11ea-94ca-2cb07d877ff6.png)
+
 5. `dondi.lmu.build`
+
+![Home 1 traceroute dondi](https://user-images.githubusercontent.com/31746937/73717745-831b4b00-46cf-11ea-8a95-403ea1487477.png)
 
 _____________________________
 
