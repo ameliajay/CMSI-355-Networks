@@ -1,6 +1,6 @@
 # Network Log
 
-*For this assignment, I explored networks at my house, at a cafe near my house, and at LMU.*
+*For this assignment I explored networks at my house, a cafe near my house, and LMU.*
 
 ### Private Network: My House
 #### Exploration 1
@@ -180,6 +180,7 @@ traceroute:
 
 ![Home 2 traceroute dondi](https://user-images.githubusercontent.com/31746937/73718758-47ce4b80-46d2-11ea-8423-54f76d4ea59b.png)
 
+This `traceroute` worked, but I found that a majority of them timed out, or just took a very long time. I would see this, `***`, and after a few lines of it I would quit running the command because it had already been going for quite a while.
 _____________________________
 
 dig:
@@ -199,6 +200,8 @@ nmap:
 1. `www.lmu.edu`
 
 ![Home 2 nmap lmu](https://user-images.githubusercontent.com/31746937/73718824-69c7ce00-46d2-11ea-8204-007966e41346.png)
+
+There were only two ports open for `www.lmu.edu` both times I did this exploration from home. These were `http` and `https`, as we can see in the screenshot.
 
 2. `dondi.lmu.build`
 
