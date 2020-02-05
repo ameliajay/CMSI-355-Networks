@@ -207,10 +207,14 @@ There were only two ports open for `www.lmu.edu` both times I did this explorati
 
 ![Home 2 nmap dondi](https://user-images.githubusercontent.com/31746937/73718832-74826300-46d2-11ea-9e21-6baf72761df3.png)
 
+The first time I ran `nmap` it took a very long time so I quit out of it. The second time I tried this it gave me the message you can see above. This was interesting to see because it said it was blocking the ping probes.
+
 3. A stop discovered by traceroute: `99.82.176.54`
 
 ![Home 2 nmap stop](https://user-images.githubusercontent.com/31746937/73718852-8237e880-46d2-11ea-9b4f-f3be7cbdcecf.png)
 ![Home 2 nmap stop pt2](https://user-images.githubusercontent.com/31746937/73718861-89f78d00-46d2-11ea-85fc-5b74b5115b5c.png)
+
+This stop that I found using `traceroute www.lmu.edu` had an extremely large amount of ports open which I thought was noteworthy so I added a couple screenshots of it.
 
 _____________________________
 
@@ -225,6 +229,8 @@ Subnet Mask: `255.255.255.0`
 Router: `192.168.0.1`
 
 DNS: `209.18.47.63` & `209.18.47.61`
+
+It is interesting that the router address is the same as the one for my home network. I liked learning about network address translation in class though, which could be the reason behind these similarities.
 
 ______________________________________
 
@@ -419,6 +425,7 @@ Router: `10.27.0.4`
 
 DNS: `10.0.100.16` & `10.0.100.17`
 
+I think it is significant to note that the subnet mask at LMU is `255.255.0.0` where the subnet mask for the coffee shop I went to and for my home network was `255.255.255.0`.
 ______________________________________
 
 Full Routing Table: `netstat -r`
@@ -475,6 +482,8 @@ traceroute:
 
 ![LMU 1 traceroute lmu](https://user-images.githubusercontent.com/31746937/73722181-c8914580-46da-11ea-9049-bae1f88782da.png)
 
+Doing `traceroute www.lmu.edu` on LMU's network took a lot more hops than on the other networks. I believe this is because the pathway to reach it changes when you are trying to access it internally (from the WiFi on LMU's campus).
+
 5. `dondi.lmu.build`
 
 ![LMU 1 traceroute dondi](https://user-images.githubusercontent.com/31746937/73722209-d34bda80-46da-11ea-8a5d-f0d14821e077.png)
@@ -492,6 +501,8 @@ dig:
 ![LMU 1 dig dondi](https://user-images.githubusercontent.com/31746937/73722248-e8c10480-46da-11ea-8e6f-63f521ab2bc4.png)
 ![LMU 1 dig dondi pt2](https://user-images.githubusercontent.com/31746937/73722260-efe81280-46da-11ea-86ff-a1a1deb260d9.png)
 
+This response was a lot longer than usual. I believe this was because `dondi.lmu.build` started to get suspicious of my actions (like all of the pinging) and thought that I was a bot. The `AUTHORITY SECTION` and `ADDITIONAL SECTION` were both very long, especially compared to the results of the `dig` command in other explorations.
+
 ______________________________
 
 nmap:
@@ -508,6 +519,8 @@ nmap:
 3. A stop discovered by traceroute: `10.8.255.1`
 
 ![LMU 1 nmap stop](https://user-images.githubusercontent.com/31746937/73722336-1d34c080-46db-11ea-9085-c7df2d73cf8a.png)
+
+I tried a lot of different stops to ping (including `10.8.255.1`) and all of them gave me the same response: the host seems down but it might be up blocking ping probes.
 
 ____________________________________
 
