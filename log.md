@@ -479,12 +479,11 @@ dig:
 
 1. `www.lmu.edu`
 
-![LMU 1 dig lmu](https://user-images.githubusercontent.com/31746937/73722226-de066f80-46da-11ea-9a71-4cebe69bd530.png)
+![LMU 2 dig lmu](https://user-images.githubusercontent.com/31746937/73800255-00e16400-476d-11ea-94ce-2d3ee05552b7.png)
 
 2. `dondi.lmu.build`
 
-![LMU 1 dig dondi](https://user-images.githubusercontent.com/31746937/73722248-e8c10480-46da-11ea-8e6f-63f521ab2bc4.png)
-![LMU 1 dig dondi pt2](https://user-images.githubusercontent.com/31746937/73722260-efe81280-46da-11ea-86ff-a1a1deb260d9.png)
+![LMU 2 dig dondi](https://user-images.githubusercontent.com/31746937/73800266-0c348f80-476d-11ea-9c2e-e78e3143fa58.png)
 
 ______________________________
 
@@ -492,16 +491,15 @@ nmap:
 
 1. `www.lmu.edu`
 
-![LMU 1 nmap lmu](https://user-images.githubusercontent.com/31746937/73722276-ff675b80-46da-11ea-91f9-6af51c74b236.png)
+![LMU 2 nmap lmu](https://user-images.githubusercontent.com/31746937/73800335-3f771e80-476d-11ea-826d-abc47d7d3f63.png)
 
 2. `dondi.lmu.build`
 
-![LMU 1 nmap dondi](https://user-images.githubusercontent.com/31746937/73722314-0db57780-46db-11ea-85bc-c91451760c9d.png)
-![LMU 1 nmap dondi pt2](https://user-images.githubusercontent.com/31746937/73722327-15751c00-46db-11ea-9e14-cd2b4a715cdb.png)
+![LMU 2 nmap dondi](https://user-images.githubusercontent.com/31746937/73800371-4aca4a00-476d-11ea-9dcb-d6a151bbf943.png)
 
 3. A stop discovered by traceroute: `157.242.254.82`
 
-![LMU 1 nmap stop](https://user-images.githubusercontent.com/31746937/73722336-1d34c080-46db-11ea-9085-c7df2d73cf8a.png)
+![LMU 2 nmap stop](https://user-images.githubusercontent.com/31746937/73800382-53bb1b80-476d-11ea-8ee0-8cb0af0de732.png)
 
 ____________________________________
 
