@@ -1,5 +1,7 @@
 # Network Log
 
+*For this assignment, I explored networks at my house, at a cafe near my house, and at LMU.*
+
 ### Private Network: My House
 #### Exploration 1
 _______________________________________
@@ -113,6 +115,7 @@ Router: `192.168.0.1`
 
 DNS: `209.18.47.63` & `209.18.47.62`
 
+I found it interesting that this time around my IP Address changed, but all the other values above stayed the same.
 ______________________________________
 
 Full Routing Table: `netstat -r`
@@ -125,6 +128,7 @@ Other hosts on the same network: `arp -a`
 
 ![Home 2 arp](https://user-images.githubusercontent.com/31746937/73718566-b9f26080-46d1-11ea-8468-61060959e504.png)
 
+There were more hosts on during my first exploration. I wonder if this is because for this second exploration I did it in the morning so less of my roommates had been on our WiFi that day.
 ______________________________________
 
 ping:
@@ -132,6 +136,8 @@ ping:
 1. Host discovered by *arp*: `192.168.0.9`
 
 ![Home 2 ping host](https://user-images.githubusercontent.com/31746937/73718583-c7a7e600-46d1-11ea-88c4-ec3e70885a07.png)
+
+I found it interesting that for both explorations, it only took one hop to get to the host discovered by `arp` when I ran `traceroute`. When I performed this command at other locations (LMU and Playa Provisions), this wasn't always the case.
 
 2. Default router: `192.168.0.1`
 
@@ -149,6 +155,7 @@ ping:
 
 ![Home 2 ping dondi](https://user-images.githubusercontent.com/31746937/73718651-00e05600-46d2-11ea-8c7c-60e2a7e8d82d.png)
 
+The first time when I used `ping`, there was a 12.5% packet loss when I tried to communicate with `dondi.lmu.build`, but this time there was only a 8.5% packet loss. The rest of the pings all had a 0.0% packet loss though, which was interesting to see.
 ___________________________________
 
 traceroute:
