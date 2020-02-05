@@ -407,6 +407,8 @@ nmap:
 
 ![Playa Guest 2 nmap dondi](https://user-images.githubusercontent.com/31746937/73801389-1f485f00-476f-11ea-97b3-294285c9a756.png)
 
+The above screenshot shows the status updates on the progress of the `nmap` command. It was taking a very long time so I ended up quitting out of it; I wonder if the WiFi wasn't as strong which is why this took longer than it did on other explorations.
+
 3. A stop discovered by traceroute: `142.254.237.45`
 
 ![Playa Guest 2 nmap stop](https://user-images.githubusercontent.com/31746937/73801405-2cfde480-476f-11ea-8dd1-ef190d613511.png)
@@ -572,6 +574,8 @@ ping:
 ![LMU 2 ping dondi blocked](https://user-images.githubusercontent.com/31746937/73799824-e35fca80-476b-11ea-8b14-6991a8fbae78.png)
 ![LMU 2 ping dondi](https://user-images.githubusercontent.com/31746937/73799838-ea86d880-476b-11ea-86c5-f014b86548b7.png)
 
+The first screenshot here shows my request timing out multiple times. I was confused by this so I went to the website on my browser and it told me I had been blocked for security reasons and I had to verify that I was not a bot. It was actually pretty funny! I then tried the command again once I had verified that I wasn't a bot and it worked perfectly fine.
+
 ___________________________________
 
 traceroute:
@@ -579,6 +583,8 @@ traceroute:
 1. Host discovered by *arp*: `224.0.0.251`
 
 ![LMU 2 traceroute host](https://user-images.githubusercontent.com/31746937/73799942-389bdc00-476c-11ea-8348-5322d199c8a0.png)
+
+This was interesting because the `ping` worked with this address really well with 0.0% packet loss, but nothing it traceroute seemed to show up/load and instead I was shown 12 lines of `***` before I quit out of the command.
 
 2. Default router: `10.27.0.4`
 
@@ -615,6 +621,8 @@ nmap:
 1. `www.lmu.edu`
 
 ![LMU 2 nmap lmu](https://user-images.githubusercontent.com/31746937/73800335-3f771e80-476d-11ea-826d-abc47d7d3f63.png)
+
+This is interesting to me because when on LMU's network, you can see a lot more ports listed than from the other explorations, but still only two are open (`http` and `https`).
 
 2. `dondi.lmu.build`
 
