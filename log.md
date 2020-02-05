@@ -1,4 +1,5 @@
 # Network Log
+## Amelia Jay
 
 *For this assignment I explored networks at my house, a cafe near my house, and LMU.*
 
