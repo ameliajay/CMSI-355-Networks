@@ -204,7 +204,7 @@ nmap:
 
 _____________________________
 
-### Public Network: Playa Provisions (Cafe in Playa del Rey)
+### Public Network: Playa Guest 2.0 (Playa Provisions Cafe in Playa del Rey)
 #### Exploration 1
 _______________________________________
 
