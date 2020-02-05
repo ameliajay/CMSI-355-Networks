@@ -297,7 +297,7 @@ nmap:
 ___________________________
 
 ### LMU
-#### Exploration 2
+#### Exploration 1
 _______________________________________
 
 IP Address: `10.27.185.191`
@@ -312,13 +312,13 @@ ______________________________________
 
 Full Routing Table: `netstat -r`
 
-![LMU 2 table](https://user-images.githubusercontent.com/31746937/73799732-9e3b9880-476b-11ea-84dd-6969e2be22c7.png)
+![LMU 1 table](https://user-images.githubusercontent.com/31746937/73721767-ca0e3e00-46d9-11ea-9fc9-5272c8e79aa2.png)
 
 _____________________________________
 
 Other hosts on the same network: `arp -a`
 
-![LMU 2 arp](https://user-images.githubusercontent.com/31746937/73799739-a8f62d80-476b-11ea-938a-b07a6d422958.png)
+![LMU 1 arp](https://user-images.githubusercontent.com/31746937/73721906-2e310200-46da-11ea-9fca-b609508af33b.png)
 
 ______________________________________
 
@@ -326,24 +326,23 @@ ping:
 
 1. Host discovered by *arp*: `10.27.200.253`
 
-![LMU 2 ping host](https://user-images.githubusercontent.com/31746937/73799754-b1e6ff00-476b-11ea-85ab-e98404b6fda6.png)
+![LMU 1 ping host](https://user-images.githubusercontent.com/31746937/73721926-38530080-46da-11ea-94c5-088bac55ba76.png)
 
-2. Default router: `192.168.0.1`
+2. Default router: `10.27.0.4`
 
-![LMU 2 ping router](https://user-images.githubusercontent.com/31746937/73799782-c2977500-476b-11ea-8887-42da3a6e3ea7.png)
+![LMU 1 ping router](https://user-images.githubusercontent.com/31746937/73721947-430d9580-46da-11ea-8bd3-d402d59e840c.png)
 
-3. One of the DNS: `209.18.47.63`
+3. One of the DNS: `10.0.100.16`
 
-![LMU 2 ping DNS](https://user-images.githubusercontent.com/31746937/73799796-ce833700-476b-11ea-9a22-a23e7e0375b9.png)
+![LMU 1 ping DNS](https://user-images.githubusercontent.com/31746937/73721973-4d2f9400-46da-11ea-8162-c9ef05c47031.png)
 
 4. `www.lmu.edu`
 
-![LMU 2 ping lmu](https://user-images.githubusercontent.com/31746937/73799809-d93dcc00-476b-11ea-8761-a0170db651a8.png)
+![LMU 1 ping lmu](https://user-images.githubusercontent.com/31746937/73721992-5882bf80-46da-11ea-8ee8-5df2f7698732.png)
 
 5. `dondi.lmu.build`
 
-![LMU 2 ping dondi blocked](https://user-images.githubusercontent.com/31746937/73799824-e35fca80-476b-11ea-8b14-6991a8fbae78.png)
-![LMU 2 ping dondi](https://user-images.githubusercontent.com/31746937/73799838-ea86d880-476b-11ea-86c5-f014b86548b7.png)
+![LMU 1 ping dondi](https://user-images.githubusercontent.com/31746937/73722010-620c2780-46da-11ea-9739-a0763b440f42.png)
 
 ___________________________________
 
@@ -353,11 +352,11 @@ traceroute:
 
 ![LMU 1 traceroute host](https://user-images.githubusercontent.com/31746937/73722137-ad263a80-46da-11ea-927c-82993c652415.png)
 
-2. Default router: `192.168.0.1`
+2. Default router: `10.27.0.4`
 
 ![LMU 1 traceroute router](https://user-images.githubusercontent.com/31746937/73722145-b57e7580-46da-11ea-8ac3-d18e45dcd45b.png)
 
-3. One of the DNS: `209.18.47.63`
+3. One of the DNS: `10.0.100.16`
 
 ![LMU 1 traceroute DNS](https://user-images.githubusercontent.com/31746937/73722163-bfa07400-46da-11ea-8689-983fb559fdd8.png)
 
@@ -402,7 +401,7 @@ nmap:
 ____________________________________
 
 ### LMU
-#### Exploration 1
+#### Exploration 2
 _______________________________________
 
 IP Address: `10.27.185.191`
@@ -417,61 +416,62 @@ ______________________________________
 
 Full Routing Table: `netstat -r`
 
-![LMU 1 table](https://user-images.githubusercontent.com/31746937/73721767-ca0e3e00-46d9-11ea-9fc9-5272c8e79aa2.png)
+![LMU 2 table](https://user-images.githubusercontent.com/31746937/73799732-9e3b9880-476b-11ea-84dd-6969e2be22c7.png)
 
 _____________________________________
 
 Other hosts on the same network: `arp -a`
 
-![LMU 1 arp](https://user-images.githubusercontent.com/31746937/73721906-2e310200-46da-11ea-9fca-b609508af33b.png)
+![LMU 2 arp](https://user-images.githubusercontent.com/31746937/73799739-a8f62d80-476b-11ea-938a-b07a6d422958.png)
 
 ______________________________________
 
 ping:
 
-1. Host discovered by *arp*: `10.27.200.253`
+1. Host discovered by *arp*: `224.0.0.251`
 
-![LMU 1 ping host](https://user-images.githubusercontent.com/31746937/73721926-38530080-46da-11ea-94c5-088bac55ba76.png)
+![LMU 2 ping host](https://user-images.githubusercontent.com/31746937/73799754-b1e6ff00-476b-11ea-85ab-e98404b6fda6.png)
 
-2. Default router: `192.168.0.1`
+2. Default router: `10.27.0.4`
 
-![LMU 1 ping router](https://user-images.githubusercontent.com/31746937/73721947-430d9580-46da-11ea-8bd3-d402d59e840c.png)
+![LMU 2 ping router](https://user-images.githubusercontent.com/31746937/73799782-c2977500-476b-11ea-8887-42da3a6e3ea7.png)
 
-3. One of the DNS: `209.18.47.63`
+3. One of the DNS: `10.0.100.16`
 
-![LMU 1 ping DNS](https://user-images.githubusercontent.com/31746937/73721973-4d2f9400-46da-11ea-8162-c9ef05c47031.png)
+![LMU 2 ping DNS](https://user-images.githubusercontent.com/31746937/73799796-ce833700-476b-11ea-9a22-a23e7e0375b9.png)
 
 4. `www.lmu.edu`
 
-![LMU 1 ping lmu](https://user-images.githubusercontent.com/31746937/73721992-5882bf80-46da-11ea-8ee8-5df2f7698732.png)
+![LMU 2 ping lmu](https://user-images.githubusercontent.com/31746937/73799809-d93dcc00-476b-11ea-8761-a0170db651a8.png)
 
 5. `dondi.lmu.build`
 
-![LMU 1 ping dondi](https://user-images.githubusercontent.com/31746937/73722010-620c2780-46da-11ea-9739-a0763b440f42.png)
+![LMU 2 ping dondi blocked](https://user-images.githubusercontent.com/31746937/73799824-e35fca80-476b-11ea-8b14-6991a8fbae78.png)
+![LMU 2 ping dondi](https://user-images.githubusercontent.com/31746937/73799838-ea86d880-476b-11ea-86c5-f014b86548b7.png)
 
 ___________________________________
 
 traceroute:
 
-1. Host discovered by *arp*: `10.27.200.253`
+1. Host discovered by *arp*: `224.0.0.251`
 
-![LMU 1 traceroute host](https://user-images.githubusercontent.com/31746937/73722137-ad263a80-46da-11ea-927c-82993c652415.png)
+![LMU 2 traceroute host](https://user-images.githubusercontent.com/31746937/73799942-389bdc00-476c-11ea-8348-5322d199c8a0.png)
 
-2. Default router: `192.168.0.1`
+2. Default router: `10.27.0.4`
 
-![LMU 1 traceroute router](https://user-images.githubusercontent.com/31746937/73722145-b57e7580-46da-11ea-8ac3-d18e45dcd45b.png)
+![LMU 2 traceroute router](https://user-images.githubusercontent.com/31746937/73800166-c4156d00-476c-11ea-891f-f8cf1c0ba235.png)
 
-3. One of the DNS: `209.18.47.63`
+3. One of the DNS: `10.0.100.16`
 
-![LMU 1 traceroute DNS](https://user-images.githubusercontent.com/31746937/73722163-bfa07400-46da-11ea-8689-983fb559fdd8.png)
+![LMU 2 traceroute DNS](https://user-images.githubusercontent.com/31746937/73800179-d0012f00-476c-11ea-929d-d433d12ff5ec.png)
 
 4. `www.lmu.edu`
 
-![LMU 1 traceroute lmu](https://user-images.githubusercontent.com/31746937/73722181-c8914580-46da-11ea-9049-bae1f88782da.png)
+![LMU 2 traceroute lmu](https://user-images.githubusercontent.com/31746937/73800203-dbecf100-476c-11ea-9e14-e1afd5630e11.png)
 
 5. `dondi.lmu.build`
 
-![LMU 1 traceroute dondi](https://user-images.githubusercontent.com/31746937/73722209-d34bda80-46da-11ea-8a5d-f0d14821e077.png)
+![LMU 2 traceroute dondi](https://user-images.githubusercontent.com/31746937/73800219-e4ddc280-476c-11ea-8639-0aee80b06e68.png)
 
 _____________________________
 
@@ -499,7 +499,7 @@ nmap:
 ![LMU 1 nmap dondi](https://user-images.githubusercontent.com/31746937/73722314-0db57780-46db-11ea-85bc-c91451760c9d.png)
 ![LMU 1 nmap dondi pt2](https://user-images.githubusercontent.com/31746937/73722327-15751c00-46db-11ea-9e14-cd2b4a715cdb.png)
 
-3. A stop discovered by traceroute: `10.8.255.1`
+3. A stop discovered by traceroute: `157.242.254.82`
 
 ![LMU 1 nmap stop](https://user-images.githubusercontent.com/31746937/73722336-1d34c080-46db-11ea-9085-c7df2d73cf8a.png)
 
