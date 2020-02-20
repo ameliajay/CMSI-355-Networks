@@ -14,7 +14,7 @@ class UserHandler(socketserver.StreamRequestHandler):
         self.send('Welcome to The Chat Room\n')
         self.send('Please submit your name\n')
         while True:
-            name = self.rfile.readline().decode('utf-8')
+            name = self.rfile.readline().decode('utf-8').rstrip('\n')
             if not name:
                 self.send('You must submit a name to continue\n')
                 return
