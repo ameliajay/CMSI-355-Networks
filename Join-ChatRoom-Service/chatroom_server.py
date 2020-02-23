@@ -26,6 +26,8 @@ class UserHandler(socketserver.StreamRequestHandler):
                 self.users[client] = name
                 self.name = name
                 self.initialize()
+                self.display_members()
+                self.send('\nType your message below and press Enter to send\n')
                 break
         while True:
             message = self.rfile.readline().decode('utf-8')
@@ -34,6 +36,8 @@ class UserHandler(socketserver.StreamRequestHandler):
             self.send(message)
         print(f'Closed: {client}')
         self.room.remove(self.users[client])
+        self.leave()
+        self.display_members()
         print(f'{name} has left The Chat Room\n')
         print(f'Users still in The Chat Room:')
         for user in self.room:
@@ -44,6 +48,12 @@ class UserHandler(socketserver.StreamRequestHandler):
 
     def initialize(self):
         ChatRoom.join(self)
+        
+    def display_members(self):
+        ChatRoom.display_members(self)
+
+    def leave(self):
+        ChatRoom.leave(self)
         
 class ChatRoom:
     members = []
@@ -56,6 +66,18 @@ class ChatRoom:
         cls.members.append(user)
         for member in cls.members:
             member.send(user.name + ' has entered The Chat Room.')
+            
+    @classmethod
+    def leave(cls, user):
+        cls.members.remove(user)
+        
+    @classmethod
+    def display_members(cls, user):
+        for member in cls.members:
+            member.send('The Chat Room Members:')
+            for m in cls.members:
+                member.send(m.name)
+            member.send('_______________________________________________')
     
 with ThreadedTCPServer(('', 59898), UserHandler) as server:
     print(f'The Chat Room is live...')
