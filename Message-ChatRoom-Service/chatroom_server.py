@@ -3,13 +3,11 @@ import threading
 
 class ThreadedTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
     daemon_threads = True
-    allow_reuse_address = True  # not sure what this means
+    allow_reuse_address = True
 
 class UserHandler(socketserver.StreamRequestHandler):
     room = []
-    users = {}
     name = None
-    # need to add a chatroom class
     def handle(self):
         client = f'{self.client_address} on {threading.currentThread().getName()}'
         print(f'Connected: {client}')
@@ -23,27 +21,28 @@ class UserHandler(socketserver.StreamRequestHandler):
             elif name in self.room:
                 self.send('That username is already taken - please submit another\n')
             else:
+                # add the name to the list of names in the room
                 self.room.append(name)
-                self.users[client] = name
                 self.name = name
+                # then join the chat room
                 self.initialize()
                 self.display_members()
                 self.send('\nType your message below and press Enter to send\n')
                 break
+
+        # keep sending messages until the client leaves
         while True:
             message = self.rfile.readline().decode('utf-8')
             if not message:
                 break
             self.send_all(message)
+
         print(f'Closed: {client}')
-        self.room.remove(self.users[client])
+        # remove the name from the list of names and leave the chat room
+        self.room.remove(self.name)
         self.leave()
         self.send_all('Bye!! I am leaving The Chat Room\n')
         self.display_members()
-        print(f'{name} has left The Chat Room\n')
-        print(f'Users still in The Chat Room:')
-        for user in self.room:
-            print(user)
 
     def send(self, message):
         self.wfile.write(f'\n{message}\n'.encode('utf-8'))
@@ -64,6 +63,7 @@ class ChatRoom:
     members = []
 
     def __init__(self):
+        # would locking be used if I wanted lots of chatrooms open at the same time?
         self.lock = threading.Lock()
 
     @classmethod
