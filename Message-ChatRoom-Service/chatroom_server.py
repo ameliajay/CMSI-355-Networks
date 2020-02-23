@@ -1,13 +1,7 @@
-import socketserver
-import threading
-
-class ThreadedTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
-    daemon_threads = True
-    allow_reuse_address = True  # not sure what this means
-
 class UserHandler(socketserver.StreamRequestHandler):
     room = []
     users = {}
+    name = None
     # need to add a chatroom class
     def handle(self):
         client = f'{self.client_address} on {threading.currentThread().getName()}'
@@ -24,24 +18,49 @@ class UserHandler(socketserver.StreamRequestHandler):
             else:
                 self.room.append(name)
                 self.users[client] = name
-                # I want this to be sent to all the users, not just printed
-                print('The Chat Room Members are:')
-                for user in self.room:
-                    print(user)
+                self.name = name
+                self.initialize()
                 break
         while True:
             message = self.rfile.readline().decode('utf-8')
             if not message:
                 break
-            self.send(message)
+            self.send_all(message)
         print(f'Closed: {client}')
         self.room.remove(self.users[client])
         print(f'{name} has left The Chat Room\n')
-        print(f'Users still in The Chat Room: {self.room}\n')
+        print(f'Users still in The Chat Room:')
+        for user in self.room:
+            print(user)
 
     def send(self, message):
         self.wfile.write(f'\n{message}\n'.encode('utf-8'))
-        
+
+    def send_all(self, message):
+        ChatRoom.send(self, message)
+
+    def initialize(self):
+        ChatRoom.join(self)
+
+class ChatRoom:
+    members = []
+
+    def __init__(self):
+        self.lock = threading.Lock()
+
+    @classmethod
+    def join(cls, user):
+        cls.members.append(user)
+        for member in cls.members:
+            member.send(user.name + ' has entered The Chat Room.')
+
+    @classmethod
+    def send(cls, sender, message):
+        name = sender.name
+        for member in cls.members:
+            if member.name is not name:
+                member.send(name + '> ' + message)
+
 with ThreadedTCPServer(('', 59898), UserHandler) as server:
     print(f'The Chat Room is live...')
     server.serve_forever()
