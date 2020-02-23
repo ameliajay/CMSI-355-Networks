@@ -59,7 +59,9 @@ class ChatRoom:
         name = sender.name
         for member in cls.members:
             if member.name is not name:
-                member.send(name + '> ' + message)
+                member.send(name + ' > ' + message)
+            else:
+                member.send('me > ' + message)
 
 with ThreadedTCPServer(('', 59898), UserHandler) as server:
     print(f'The Chat Room is live...')
